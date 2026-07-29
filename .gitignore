@@ -1,0 +1,9 @@
+node_modules
+dist
+dist-ssr
+*.local
+.DS_Store
+
+# local agent tooling (not part of the game)
+.agents/
+skills-lock.json
