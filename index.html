@@ -20,11 +20,18 @@
       }
       #unsupported h1 { font-size: 1.1rem; margin: 0; }
       #unsupported p { font-size: 0.9rem; margin: 0; opacity: 0.7; max-width: 30ch; }
+      #error {
+        display: none; position: fixed; top: 30px; left: 10px; right: 10px; z-index: 20;
+        color: #ffb4b4; background: rgba(40,0,0,0.85); padding: 10px 12px;
+        font-size: 12px; font-family: ui-monospace, monospace; white-space: pre-wrap;
+        border-radius: 6px; pointer-events: none;
+      }
     </style>
   </head>
   <body>
     <div id="fps">…</div>
     <div id="app"></div>
+    <div id="error"></div>
     <div id="unsupported">
       <h1>WebGPU not available</h1>
       <p>Bounce needs a WebGPU-capable browser — Chrome 121+ (Android) or Safari 17.4+ (iOS).</p>
